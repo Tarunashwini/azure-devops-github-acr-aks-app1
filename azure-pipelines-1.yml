@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'afd91242-a594-490f-8269-b1e20521ccca'
   imageRepository: 'tarunashwiniazuredevopsgithubacraksapp'
   containerRegistry: 'tarunr.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile.txt'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'tarunr16311428-auth'
 
