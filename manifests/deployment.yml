@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: tarunashwiniazuredevopsgithubacraksapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tarunashwiniazuredevopsgithubacraksapp
+  template:
+    metadata:
+      labels:
+        app: tarunashwiniazuredevopsgithubacraksapp 
+    spec:
+      containers:
+        - name: tarunashwiniazuredevopsgithubacraksapp 
+          image: tarunr.azurecr.io/tarunashwiniazuredevopsgithubacraksapp
+          ports:
+          - containerPort: 80
