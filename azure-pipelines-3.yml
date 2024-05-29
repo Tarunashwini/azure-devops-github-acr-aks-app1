@@ -19,7 +19,7 @@ stages:
     steps:
     - task: Docker@2
       inputs:
-        containerRegistry: 'tarun-manual-aksdevopsacr-svc'
+        containerRegistry: 'manual-aksdevopsacr-svc'
         repository: 'tarunashwiniazuredevopsgithubacraksapp'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
