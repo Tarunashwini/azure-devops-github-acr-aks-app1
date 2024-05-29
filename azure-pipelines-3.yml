@@ -22,7 +22,7 @@ stages:
         containerRegistry: 'manual-aksdevopsacr-svc'
         repository: 'tarunashwiniazuredevopsgithubacraksapp'
         command: 'buildAndPush'
-        Dockerfile: '**/Dockerfile'
+        Dockerfile: '$(Build.SourcesDirectory)/Dockerfile.txt'
         tags: |
           $(tag)
           $(Build.SourceVersion)
