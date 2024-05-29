@@ -24,7 +24,7 @@ stages:
         command: 'buildAndPush'
         Dockerfile: '$(Build.SourcesDirectory)/Dockerfile.txt'
         tags: |
-          $(tag)
+          $(Build.BuildId)
           $(Build.SourceVersion)
     - task: CopyFiles@2
       inputs:
